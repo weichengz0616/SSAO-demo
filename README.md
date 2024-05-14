@@ -20,12 +20,17 @@
 着色器代码：/shader
 
 /shader/geometry.vs
+
 /shader/geometry.fs 几何处理阶段的着色器
 
 /shader/ssao.vs 画四边形共用的顶点着色器
+
 /shader/ssao.fs 填充SSAO纹理使用的片段着色器
+
 /shader/blur.fs 模糊SSAO纹理使用的片段着色器
+
 /shader/lighting_ssao.fs 使用了SSAO的光照计算
+
 /shader/lighting_nossao.fs  未使用SSAO的光照计算
 
 
@@ -34,8 +39,11 @@
 ##### 3、src
 
 main.cpp    其中包含了延迟着色和SSAO大部分代码
+
 shader.h    用于着色器的创建链接
+
 mesh.h & model.h     用于模型读取
+
 
 ##### 4、third_party
 
@@ -45,13 +53,16 @@ mesh.h & model.h     用于模型读取
 ## 二、编译运行
 
 项目框架是基于小作业给的代码框架之上的, 使用cmake构建生成sln文件
+
 之后打开./build/SSAO-demo.sln
+
 将SSAO-demo设为启动项目,编译运行即可
 
 
 ## 三、功能
 
 展示SSAO的效果
+
 用户可以自由移动视角观察,切换渲染模式
 
 ## 四、交互
